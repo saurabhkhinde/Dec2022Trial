@@ -31,16 +31,13 @@ public class Loging_web_page
 		return ExpTitle;
        
 	}	
-
 	public void CheckBoxVerify() throws EncryptedDocumentException, IOException
 	
-	{
-			
+	{	
 		boolean expchkresult=Utility.excelbooleandata("Sheet1", 2,2);
 		boolean ActResult = chkbox.isSelected();
 		Assert.assertEquals(ActResult, expchkresult,"CheckBox is Already selected");
 	}
-	
 	public void enterUN() throws IOException
 	{
 	
